@@ -11,7 +11,7 @@ import swiftvis2.plotting.renderer.SwingRenderer
 object HelloWorld {
 	def main(args: Array[String]): Unit = {
 		println("Hello World!")
-		val plot = Plot.simple(ScatterStyle(1 to 10, (1 to 10).map(x => x*x)), "Grade vs. Effort", "Effort Required", "Grade")
+		val plot = Plot.simple(ScatterStyle(1 to 10, 1 to 10), "Grade vs. Effort", "Effort Required", "Grade")
 		SwingRenderer(plot, 1000, 1000, true)
 	}
 }
